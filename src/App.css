@@ -170,6 +170,16 @@ main {
 	padding-inline: 23px;
 }
 
+.van-list-container button {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.van-list-filter-buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .van-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -225,6 +235,19 @@ main {
 .van-type.luxury:hover,
 .van-type.luxury.selected {
 	background-color: #161616;
+}
+
+.van-type.clear-filters {
+	margin-left: -20px;
+	height: 34px;
+	padding: 6px 26px;
+	font-style: normal;
+	font-weight: 500;
+	border: none;
+	border-radius: 5px;
+	text-decoration: underline;
+	background-color: transparent;
+	color: #4d4d4d;
 }
 
 i[class*='van-type-'] {
