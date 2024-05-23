@@ -13,6 +13,9 @@ export default function Header() {
 				#VanLife
 			</Link>
 			<nav>
+				<NavLink to="host" style={({ isActive }) => (isActive ? activeStyles : null)}>
+					Host
+				</NavLink>
 				<NavLink to="about" style={({ isActive }) => (isActive ? activeStyles : null)}>
 					About
 				</NavLink>
