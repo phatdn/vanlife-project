@@ -234,6 +234,10 @@ main {
 	font-family: 'Inter', sans-serif;
 }
 
+.red {
+	color: #cc0000;
+}
+
 /*** VAN PAGES ***/
 .van-list-container {
 	padding-inline: 23px;

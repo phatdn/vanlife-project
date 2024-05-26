@@ -5,7 +5,7 @@ import './server';
 
 import Layout from './components/Layout';
 import About from './pages/About';
-import Login from './pages/Login';
+import Login, { loader as loginLoader } from './pages/Login';
 import Home from './pages/Home';
 import Vans, { loader as vansLoader } from './pages/Vans/Vans';
 import VanDetail, { loader as vanDetailLoader } from './pages/Vans/VanDetail';
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
 		<Route path="/" element={<Layout />}>
 			<Route index element={<Home />} />
 			<Route path="about" element={<About />} />
-			<Route path="login" element={<Login />} />
+			<Route path="login" loader={loginLoader} element={<Login />} />
 			<Route path="vans" loader={vansLoader} element={<Vans />} errorElement={<Error />} />
 			<Route path="vans/:id" loader={vanDetailLoader} element={<VanDetail />} errorElement={<Error />} />
 			<Route path="host" element={<HostLayout />}>
